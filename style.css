@@ -1,9 +1,138 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0d1323;
+    color: #fff;
+    
+}
+
+html{
+    font-size: 16px;
+}
+
+main{
     width: 1000px;
-    height: 500px;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5rem;
+    grid-template-areas: 
+     "a1 a2 a3 a4"
+     "a1 a5 a6 a7";
+
+}
+
+.card{
+    background-color: #1d204b;
+    border-radius: 1.2rem;
+
+}
+
+.card-00{
+    grid-area: a1;
+    
+}
+
+.card-01{
+    grid-area: a2;
+    background-image: url(./img/icon-work.svg);
+    background-color: #ff8b64;
+    background-repeat: no-repeat;
+    background-position-x: 8.75rem;
+    
+}
+
+.card-02{
+    grid-area: a3;
+    background-image: url(./img/icon-play.svg);
+    background-color: #56c2e6;
+    background-repeat: no-repeat;
+    background-position-x: 8.75rem;
+}
+
+.card-03{
+    grid-area: a4;
+    background-image: url(./img/icon-study.svg);
+    background-color: #ff5e7d;
+    background-repeat: no-repeat;
+    background-position-x: 8.75rem;
+}
+
+.card-04{
+    grid-area: a5;
+    background-image: url(./img/icon-exercise.svg);
+    background-color: #4bcf83;
+    background-repeat: no-repeat;
+    background-position-x: 8.75rem;
+}
+
+.card-05{
+    grid-area: a6;
+    background-image: url(./img/icon-social.svg);
+    background-color: #7235d1;
+    background-repeat: no-repeat;
+    background-position-x: 8.75rem;
+}
+
+.card-06{
+    grid-area: a7;
+    background-image: url(./img/icon-self-care.svg);
+    background-color: #f1c65b;
+    background-repeat: no-repeat;
+    background-position-x: 8.75rem;
+}
+
+.content-card1{
+    background-color: #5746ea;
+    padding: 2rem 1rem 4rem 1rem;
+    border-radius: 1.1rem;
+}
+
+.content-card1 figure img{
+    width: 5.6rem;
+    height: 5.6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.content-card1 p{
+    font-size: 1rem;
+    padding-top: 2rem;
+    
+}
+
+.content-card1 span{
+    font-size: 2.5rem;
+    
+}
+
+.content-card2{
+    padding: 0.5rem 1rem 2rem 1rem;
+    
+}
+
+.content-card2 h3{
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.7rem 0;
+}
+
+
+/*----*/
+
+.cards{
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
