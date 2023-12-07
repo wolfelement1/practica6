@@ -186,6 +186,11 @@ main{
         display: flex;
         justify-content: space-around;
     }
+
+    .content-card2 h3{
+        font-size: 1.8rem;
+    }
+    
     main{
         width: 90%;
         height: 100vh;
