@@ -7,3 +7,78 @@ body{
     height: 500px;
     margin: auto;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: repeat(2,190px);
+    gap: 10px;
+    background-color: aquamarine;
+    justify-content: center;
+}
+
+.container section{
+    border:solid 2px black;    
+    border-radius: 5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bloque2{
+    background-color: #faae09;
+    overflow: hidden;
+    display: grid;
+    align-items: end;
+    position: relative;
+}
+
+.icono1{
+    transform: scale(0.6) translate(200px,-220px);
+    z-index: 10;
+}
+
+.bloque2-1{
+    width: 200px;
+    height: 165px;
+    background: #0d1323;
+    border-radius: 10px;
+    translate: 0 6px;
+    position: absolute;
+    margin: 0;
+    z-index: 20;
+}
+
+.work{
+    font-size: 14px;
+    font-weight: lighter;
+    translate: 20px 20px;
+}
+
+.hrs32{
+    font-size: 40px;
+    font-weight: lighter;
+    translate: 20px 45px;
+}
+
+.last{
+    font-size: 10px;
+    font-weight: lighter;
+    translate: 20px 35px;
+    color: rgba(255, 255, 255, 0.637);
+    transform:translateY(15px);
+
+}
+
+.puntos{
+    display: flex;
+    gap: 1px;
+    translate: 160px -38px;
+}
+
+.punto{
+    background-color: rgba(255, 255, 255, 0.637);
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+
+}
